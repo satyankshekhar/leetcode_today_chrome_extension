@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Today",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*"
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> LeetCode Stats</h1>
+            <p class="subtitle">Track your coding journey</p>
+        </div>
+
+        <div class="input-section">
+            <input
+                id="username"
+                placeholder="Enter LeetCode Username"
+                class="username-input"
+            />
+            <button id="fetchBtn" class="fetch-btn">
+                 Fetch Stats
+            </button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+
+        <div id="stats-container" class="stats-container hidden">
+            <div class="stat-card today">
+                <div class="stat-icon"></div>
+                <div class="stat-content">
+                    <p class="stat-label">Today's Solved</p>
+                    <p class="stat-value" id="todayCount">0</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"></div>
+                <div class="stat-content">
+                    <p class="stat-label">Current Streak</p>
+                    <p class="stat-value" id="streak">0</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"></div>
+                <div class="stat-content">
+                    <p class="stat-label">Total Active Days</p>
+                    <p class="stat-value" id="totalActiveDays">0</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"></div>
+                <div class="stat-content">
+                    <p class="stat-label">Active Years</p>
+                    <p class="stat-value" id="activeYears">0</p>
+                </div>
+            </div>
+
+            <div class="calendar-section">
+                <h3 class="calendar-title"> Recent Activity</h3>
+                <div id="recentActivity" class="recent-activity"></div>
+            </div>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
