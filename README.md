@@ -51,4 +51,4 @@ The extension calls LeetCode's GraphQL endpoint and reads the user's `submission
 
 ## License
 
-This project is for personal use and learning.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
